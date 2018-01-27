@@ -115,6 +115,21 @@
             </objects>
             <point key="canvasLocation" x="709" y="-630"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="dJB-U0-tC9">
+            <objects>
+                <viewController id="vJP-2a-FBm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AZW-Rf-8no">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="WE4-Zu-in8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fJf-pA-Xcv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1855" y="848"/>
+        </scene>
         <!--Home-->
         <scene sceneID="VQX-J4-Z2R">
             <objects>
@@ -198,23 +213,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gil-xq-Ulj">
-                                <rect key="frame" x="66" y="541" width="243" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gil-xq-Ulj">
+                                <rect key="frame" x="66" y="576" width="243" height="39"/>
                                 <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="GO!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="vJP-2a-FBm" kind="show" id="iai-tT-DM3"/>
+                                </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2om-vh-Yd7">
+                                <rect key="frame" x="66" y="333" width="243" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="192" id="qMe-Z2-Knb"/>
+                                </constraints>
+                                <string key="text">Tides out!
+
+Go look at a river wall!
+
+Health and Safety moment:
+- Wear sensible shoes 
+- Never put yourself at risk
+</string>
+                                <color key="textColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ocO-fm-GUv">
+                                <rect key="frame" x="66" y="61" width="243" height="229"/>
+                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2om-vh-Yd7" firstAttribute="trailing" secondItem="ocO-fm-GUv" secondAttribute="trailing" id="03q-Nt-7eJ"/>
+                            <constraint firstItem="gil-xq-Ulj" firstAttribute="leading" secondItem="Uas-1q-PHW" secondAttribute="leading" constant="66" id="5N6-pz-E38"/>
+                            <constraint firstItem="2om-vh-Yd7" firstAttribute="top" secondItem="ocO-fm-GUv" secondAttribute="bottom" constant="43" id="60T-M5-up2"/>
+                            <constraint firstItem="Uas-1q-PHW" firstAttribute="trailing" secondItem="gil-xq-Ulj" secondAttribute="trailing" constant="66" id="9sS-G8-yyX"/>
+                            <constraint firstItem="gil-xq-Ulj" firstAttribute="top" secondItem="2om-vh-Yd7" secondAttribute="bottom" constant="51" id="J4B-Px-5bg"/>
+                            <constraint firstItem="2om-vh-Yd7" firstAttribute="leading" secondItem="ocO-fm-GUv" secondAttribute="leading" id="V2Z-dQ-yNq"/>
+                            <constraint firstItem="gil-xq-Ulj" firstAttribute="top" secondItem="Uas-1q-PHW" secondAttribute="top" constant="556" id="flW-7y-o8Q"/>
+                            <constraint firstItem="2om-vh-Yd7" firstAttribute="leading" secondItem="Uas-1q-PHW" secondAttribute="leading" constant="66" id="fve-Ce-aiB"/>
+                            <constraint firstItem="ocO-fm-GUv" firstAttribute="top" secondItem="Uas-1q-PHW" secondAttribute="top" constant="41" id="gAU-uX-DgF"/>
+                            <constraint firstItem="Uas-1q-PHW" firstAttribute="trailing" secondItem="2om-vh-Yd7" secondAttribute="trailing" constant="66" id="vEY-mx-hrH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Uas-1q-PHW"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L7i-ok-KJ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-912" y="1195"/>
+            <point key="canvasLocation" x="-912.79999999999995" y="1194.1529235382309"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="m7I-WV-JJB">
