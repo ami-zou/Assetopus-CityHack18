@@ -118,7 +118,7 @@
         <!--TakePicture-->
         <scene sceneID="dJB-U0-tC9">
             <objects>
-                <viewController title="TakePicture" id="vJP-2a-FBm" sceneMemberID="viewController">
+                <viewController title="TakePicture" id="vJP-2a-FBm" customClass="TakePictureViewController" customModule="Assetopus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AZW-Rf-8no">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -133,6 +133,10 @@
                                 <state key="normal" title="Take Picture">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="TakePicture:" destination="vJP-2a-FBm" eventType="touchUpInside" id="hsY-iZ-XkZ"/>
+                                    <segue destination="gcY-uh-Qhc" kind="show" id="J71-Es-0Vd"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kxX-Yx-hfn">
                                 <rect key="frame" x="116" y="129" width="142" height="408"/>

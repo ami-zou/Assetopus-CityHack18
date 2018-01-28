@@ -15,6 +15,7 @@
 		A600C08B201CFEEB00CE9A30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A600C089201CFEEB00CE9A30 /* LaunchScreen.storyboard */; };
 		A600C096201CFEEB00CE9A30 /* AssetopusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A600C095201CFEEB00CE9A30 /* AssetopusTests.swift */; };
 		A600C0A1201CFEEB00CE9A30 /* AssetopusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A600C0A0201CFEEB00CE9A30 /* AssetopusUITests.swift */; };
+		A62C5A7A201E0400008A3D7A /* TakePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62C5A79201E0400008A3D7A /* TakePictureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A600C09C201CFEEB00CE9A30 /* AssetopusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssetopusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A600C0A0201CFEEB00CE9A30 /* AssetopusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetopusUITests.swift; sourceTree = "<group>"; };
 		A600C0A2201CFEEB00CE9A30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A62C5A79201E0400008A3D7A /* TakePictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePictureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		A600C07D201CFEEB00CE9A30 /* Assetopus */ = {
 			isa = PBXGroup;
 			children = (
+				A62C5A79201E0400008A3D7A /* TakePictureViewController.swift */,
 				A600C07E201CFEEB00CE9A30 /* AppDelegate.swift */,
 				A600C080201CFEEB00CE9A30 /* MasterViewController.swift */,
 				A600C082201CFEEB00CE9A30 /* DetailViewController.swift */,
@@ -264,6 +267,7 @@
 			files = (
 				A600C083201CFEEB00CE9A30 /* DetailViewController.swift in Sources */,
 				A600C081201CFEEB00CE9A30 /* MasterViewController.swift in Sources */,
+				A62C5A7A201E0400008A3D7A /* TakePictureViewController.swift in Sources */,
 				A600C07F201CFEEB00CE9A30 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
