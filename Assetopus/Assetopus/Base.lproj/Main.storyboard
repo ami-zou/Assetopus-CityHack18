@@ -115,20 +115,47 @@
             </objects>
             <point key="canvasLocation" x="709" y="-630"/>
         </scene>
-        <!--View Controller-->
+        <!--TakePicture-->
         <scene sceneID="dJB-U0-tC9">
             <objects>
-                <viewController id="vJP-2a-FBm" sceneMemberID="viewController">
+                <viewController title="TakePicture" id="vJP-2a-FBm" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AZW-Rf-8no">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1497" translatesAutoresizingMaskIntoConstraints="NO" id="vvH-kt-1Jh">
+                                <rect key="frame" x="44" y="67" width="286" height="490"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CvA-HF-J4j">
+                                <rect key="frame" x="44" y="592" width="286" height="39"/>
+                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Take Picture">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kxX-Yx-hfn">
+                                <rect key="frame" x="116" y="129" width="142" height="408"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CvA-HF-J4j" firstAttribute="top" secondItem="vvH-kt-1Jh" secondAttribute="bottom" constant="35" id="A3R-27-gEt"/>
+                            <constraint firstItem="vvH-kt-1Jh" firstAttribute="top" secondItem="WE4-Zu-in8" secondAttribute="top" constant="47" id="LYa-k4-Whu"/>
+                            <constraint firstItem="vvH-kt-1Jh" firstAttribute="leading" secondItem="WE4-Zu-in8" secondAttribute="leading" constant="44" id="ZMS-bU-8Ty"/>
+                            <constraint firstItem="CvA-HF-J4j" firstAttribute="leading" secondItem="WE4-Zu-in8" secondAttribute="leading" constant="44" id="Zcc-dZ-bG4"/>
+                            <constraint firstItem="WE4-Zu-in8" firstAttribute="trailing" secondItem="CvA-HF-J4j" secondAttribute="trailing" constant="45" id="bkS-PL-D1O"/>
+                            <constraint firstItem="WE4-Zu-in8" firstAttribute="trailing" secondItem="vvH-kt-1Jh" secondAttribute="trailing" constant="45" id="eeV-96-sKn"/>
+                            <constraint firstItem="WE4-Zu-in8" firstAttribute="bottom" secondItem="vvH-kt-1Jh" secondAttribute="bottom" constant="110" id="s09-lr-cBe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="WE4-Zu-in8"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJf-pA-Xcv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1855" y="848"/>
+            <point key="canvasLocation" x="-1855.2" y="846.9265367316342"/>
         </scene>
         <!--Home-->
         <scene sceneID="VQX-J4-Z2R">
@@ -242,7 +269,7 @@ Health and Safety moment:
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ocO-fm-GUv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1497" translatesAutoresizingMaskIntoConstraints="NO" id="ocO-fm-GUv">
                                 <rect key="frame" x="66" y="61" width="243" height="229"/>
                                 <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
@@ -447,6 +474,7 @@ Health and Safety moment:
         </scene>
     </scenes>
     <resources>
+        <image name="1497" width="2448" height="3264"/>
         <image name="assetbuddylogoblack" width="1267" height="761"/>
     </resources>
 </document>
